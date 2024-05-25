@@ -32,21 +32,17 @@ function selectionSort(arr: number[]): number[] {
 const arr = [64, 25, 12, 22, 11];
 console.log("Sorted array:", selectionSort(arr));
 
-
-function insertionSort(arr:number[], length: number) {
-  for(let  i = 1; i < length; i++) {
-    for(let j  = i - 1; j >= 0; j-- ) {
-      if(arr[j] > arr[j+1]) {
-        console.log(arr)
-        swap(arr, j, j + 1)
+function insertionSort(arr: number[], length: number) {
+  for (let i = 1; i < length; i++) {
+    for (let j = i - 1; j >= 0; j--) {
+      if (arr[j] > arr[j + 1]) {
+        console.log(arr);
+        swap(arr, j, j + 1);
       } else {
-        break
+        break;
       }
     }
   }
 }
 
-
-insertionSort([3,24,34,8,7,2], 6)
-
-
+insertionSort([3, 24, 34, 8, 7, 2], 6);
